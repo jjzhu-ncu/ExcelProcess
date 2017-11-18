@@ -1,4 +1,5 @@
-origin_customer_table_input_dir: E:\123\ExcelProcess
-processed_customer_table_output_dir: E:\123\ExcelProcess\output2\customer
-origin_finance_table_input_dir: E:\123\ExcelProcess
-processed_finance_table_output_dir: E:\123\ExcelProcess\output2\finance
+origin_customer_table_input_dir: C:\workspace\ExcelProcess
+processed_customer_table_output_dir: C:\workspace\space4py\ExcelProcess\output2\customer
+origin_finance_table_input_dir: C:\workspace\ExcelProcess
+processed_finance_table_output_dir: C:\workspace\space4py\ExcelProcess\output2\finance
+process_all: true
