@@ -1,0 +1,95 @@
+# -*- coding:utf-8 -*-
+import os
+import re
+from functools import reduce
+
+import pandas as pd
+import xlwt
+
+from setting import PROPERTIES, PROJECT_INTER_OUTPUT_DIR, EXCEL_SUFFIX
+
+pd.options.mode.chained_assignment = None
+
+if not os.path.exists(PROPERTIES['processed_finance_table_output_dir']):
+    os.makedirs(PROPERTIES['processed_finance_table_output_dir'])
+origin_customer_dfs = []
+# 加载所有拆分客服表
+normal_customer_file_pattern = re.compile(r'拆分客服表-\d{4}_\d{1,2}_\d{1,2}.[Xx][Ll][Ss]')
+normal_finance_file_pattern = re.compile(r'原始财务表-(\d{4})_(\d{1,2})_(\d{1,2}).[Xx][Ll][Ss]')
+for file_or_dir in os.listdir(PROJECT_INTER_OUTPUT_DIR + '\\customer'):
+    if not os.path.isdir(PROJECT_INTER_OUTPUT_DIR + '\\customer\\' + file_or_dir):
+        if normal_customer_file_pattern.match(file_or_dir):
+            tmp_df = pd.read_excel(PROJECT_INTER_OUTPUT_DIR + '\\customer\\' + file_or_dir)
+            origin_customer_dfs.append(tmp_df)
+origin_customer_df = reduce(lambda x, y: x.append(y, ignore_index=True), origin_customer_dfs)
+origin_customer_df = origin_customer_df[['订单编号', '订单金额', '订单描述', '购买数量', '商品价格', '运费']]
+origin_customer_df['订单编号'] = origin_customer_df['订单编号'].apply(lambda x: '{:.0f}'.format(x))
+origin_customer_df = origin_customer_df.rename(columns={'订单编号': '订单号'})
+
+
+def process(file_name):
+    origin_finance_df = pd.read_excel(PROPERTIES['origin_finance_table_input_dir'] + '\\' + file_name)
+    match = normal_finance_file_pattern.findall(file_name)
+    curr_date = '_'.join(match[0])
+    origin_finance_df['订单号'] = origin_finance_df['订单号'].apply(lambda x: '{:.0f}'.format(x))
+    income_df = origin_finance_df[origin_finance_df.账单类型 == '货款收入']
+    other_df = origin_finance_df[origin_finance_df.账单类型 != '货款收入']
+    # 保存
+
+    income_df.sort_values(by='时间', ascending=False) \
+        .to_excel(PROPERTIES['processed_finance_table_output_dir'] + '\\收入财务表-' +
+                  curr_date + EXCEL_SUFFIX,
+                  index=False)
+    other_df = other_df.sort_values(by=['时间', '收支类型'], ascending=[False, True])
+    credit_card_pay_df = other_df[other_df.账单类型 == '信用卡手续费']
+    total_pay = credit_card_pay_df['收入(元)'].sum()
+    other_df_columns = list(other_df.columns.values)
+    extra_data = ['' for _ in range(len(other_df_columns))]
+    extra_data[other_df_columns.index('收入(元)')] = total_pay
+    extra_data[other_df_columns.index('收入(元)') - 1] = '总计手续费'
+    extra_df = pd.DataFrame(data=[extra_data], columns=other_df_columns)
+    other_df.append(extra_df, ignore_index=True). \
+        to_excel(PROPERTIES['processed_finance_table_output_dir'] + '\\其他财务表-' +
+                 curr_date + EXCEL_SUFFIX,
+                 index=False)
+    income_df = income_df[['时间', '收入(元)', '订单号']]
+    merge_df = pd.merge(income_df, origin_customer_df, on='订单号')
+
+    merge_df['总金额'] = merge_df[['购买数量', '商品价格']].apply(lambda x: x.prod(), axis=1)
+    merge_columns = list(merge_df.columns.values)
+
+    pattern = xlwt.Pattern()
+    pattern.pattern = xlwt.Pattern.SOLID_PATTERN
+    pattern.pattern_fore_colour = 2
+    red_background_style = xlwt.XFStyle()
+    # style0.font = font0
+    red_background_style.pattern = pattern
+    wb = xlwt.Workbook()
+    ws = wb.add_sheet('Sheet1')
+    for i in range(len(merge_columns)):
+        ws.write(0, i, str(merge_columns[i]))
+
+    for index in merge_df.index:
+        error_flag = False
+
+        column = merge_df.iloc[index].values
+        if column[merge_columns.index('收入(元)')] != column[merge_columns.index('订单金额')]:
+            error_flag = True
+        for c_i in range(len(column)):
+            if error_flag:
+                ws.write(int(index) + 1, c_i, str(column[c_i]), red_background_style)
+            else:
+                ws.write(int(index) + 1, c_i, str(column[c_i]))
+    wb.save(PROPERTIES['processed_finance_table_output_dir'] + '\\有效财务表-' +
+            curr_date + EXCEL_SUFFIX)
+    # merge_df.to_excel(output_path + '收入财务表2-' +
+    #                   datetime.datetime.now().__format__('%Y_%m_%d') + '.xlsx',
+    #                   index=False)
+
+
+for file_or_dir in os.listdir(PROPERTIES['origin_finance_table_input_dir']):
+
+    if os.path.isfile(PROPERTIES['origin_finance_table_input_dir'] + '\\' + file_or_dir) \
+            and normal_finance_file_pattern.match(file_or_dir):
+        print(file_or_dir)
+        process(file_or_dir)

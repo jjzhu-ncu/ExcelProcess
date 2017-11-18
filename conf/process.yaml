@@ -1,0 +1,4 @@
+origin_customer_table_input_dir: E:\123\ExcelProcess
+processed_customer_table_output_dir: E:\123\ExcelProcess\output2\customer
+origin_finance_table_input_dir: E:\123\ExcelProcess
+processed_finance_table_output_dir: E:\123\ExcelProcess\output2\finance
