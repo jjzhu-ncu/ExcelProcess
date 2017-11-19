@@ -1,49 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="049e64bb-554d-46bc-a5eb-647435fb403d" name="Default" comment="add">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/conf/logging.conf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logger.py" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/output/customer/拆分客服表-2017_11_17.xls" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/output/customer/拆分客服表-2017_11_18.xls" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/output2/customer/分类客户表-2017_11_17/分类客户表-2017_11_17-Nuvita便携式紫外线消毒器.xls" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/output2/customer/分类客户表-2017_11_17/分类客户表-2017_11_17-亲亲宝贝翻翻书.xls" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/output2/customer/分类客户表-2017_11_17/分类客户表-2017_11_17-法国益智积木  家里的蒙氏玩教具.xls" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/output2/customer/分类客户表-2017_11_18/分类客户表-2017_11_18-Let's diet弹力魔术裤 魔术裤加绒款.xls" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/output2/customer/分类客户表-2017_11_18/分类客户表-2017_11_18-Let's diet弹力魔术裤 魔术裤春秋款.xls" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/output2/customer/分类客户表-2017_11_18/分类客户表-2017_11_18-多功能大容量的妈咪包 时尚黑.xls" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/output2/customer/分类客户表-2017_11_18/分类客户表-2017_11_18-多功能大容量的妈咪包 淡绿色.xls" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/output2/customer/分类客户表-2017_11_18/分类客户表-2017_11_18-多功能大容量的妈咪包 蓝紫色.xls" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/output2/customer/分类客户表-2017_11_18/分类客户表-2017_11_18-多功能大容量的妈咪包 藏青色.xls" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/output2/customer/分类客户表-2017_11_18/分类客户表-2017_11_18-意大利全脑开发训练书.xls" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/output2/customer/拆分客服表-2017_11_17.xls" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/output2/customer/拆分客服表-2017_11_18.xls" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/output2/customer/有效客服表-2017_11_17.xls" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/output2/customer/有效客服表-2017_11_18.xls" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/output2/customer/退款客服表-2017_11_17.xls" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/output2/customer/退款客服表-2017_11_18.xls" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/output2/finance/其他财务表-2017_11_14.xls" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/output2/finance/其他财务表-2017_11_15.xls" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/output2/finance/其他财务表-2017_11_16.xls" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/output2/finance/其他财务表-2017_11_17.xls" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/output2/finance/其他财务表-2017_11_18.xls" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/output2/finance/收入财务表-2017_11_14.xls" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/output2/finance/收入财务表-2017_11_15.xls" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/output2/finance/收入财务表-2017_11_16.xls" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/output2/finance/收入财务表-2017_11_17.xls" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/output2/finance/收入财务表-2017_11_18.xls" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/output2/finance/有效财务表-2017_11_14.xls" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/output2/finance/有效财务表-2017_11_15.xls" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/output2/finance/有效财务表-2017_11_16.xls" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/output2/finance/有效财务表-2017_11_17.xls" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/output2/finance/有效财务表-2017_11_18.xls" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
+    <list default="true" id="049e64bb-554d-46bc-a5eb-647435fb403d" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/conf/process.yaml" afterPath="$PROJECT_DIR$/conf/process.yaml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/customer.py" afterPath="$PROJECT_DIR$/customer.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/finance.py" afterPath="$PROJECT_DIR$/finance.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/setting.py" afterPath="$PROJECT_DIR$/setting.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/util/test.py" afterPath="$PROJECT_DIR$/util/test.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -67,11 +28,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="customer.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="customer.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/customer.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="121">
-              <caret line="124" column="13" lean-forward="false" selection-start-line="124" selection-start-column="13" selection-end-line="124" selection-end-column="13" />
+            <state relative-caret-position="180">
+              <caret line="127" column="5" lean-forward="true" selection-start-line="127" selection-start-column="5" selection-end-line="127" selection-end-column="5" />
               <folding>
                 <element signature="e#23#32#0" expanded="true" />
               </folding>
@@ -102,8 +63,8 @@
       <file leaf-file-name="finance.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/finance.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="219">
-              <caret line="118" column="13" lean-forward="false" selection-start-line="118" selection-start-column="13" selection-end-line="118" selection-end-column="13" />
+            <state relative-caret-position="166">
+              <caret line="113" column="19" lean-forward="false" selection-start-line="113" selection-start-column="14" selection-end-line="113" selection-end-column="19" />
               <folding>
                 <element signature="e#23#32#0" expanded="true" />
               </folding>
@@ -115,17 +76,7 @@
         <entry file="file://$PROJECT_DIR$/conf/process.yaml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="144">
-              <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="17" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
-              <caret line="6" column="6" lean-forward="true" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
+              <caret line="4" column="17" lean-forward="false" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
               <folding />
             </state>
           </provider>
@@ -135,7 +86,7 @@
         <entry file="file://$PROJECT_DIR$/setting.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="160">
-              <caret line="6" column="21" lean-forward="true" selection-start-line="6" selection-start-column="21" selection-end-line="6" selection-end-column="21" />
+              <caret line="6" column="21" lean-forward="false" selection-start-line="6" selection-start-column="21" selection-end-line="6" selection-end-column="21" />
               <folding>
                 <element signature="e#0#11#0" expanded="true" />
               </folding>
@@ -159,8 +110,8 @@
       <find>p</find>
       <find>to_excel</find>
       <find>origin_customer_df</find>
-      <find>print</find>
       <find>merge_df</find>
+      <find>print</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -181,9 +132,9 @@
         <option value="$PROJECT_DIR$/conf/process.yaml" />
         <option value="$PROJECT_DIR$/util/test.py" />
         <option value="$PROJECT_DIR$/setting.py" />
-        <option value="$PROJECT_DIR$/customer.py" />
-        <option value="$PROJECT_DIR$/finance.py" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/finance.py" />
+        <option value="$PROJECT_DIR$/customer.py" />
       </list>
     </option>
   </component>
@@ -231,7 +182,7 @@
             <path>
               <item name="ExcelProcess" type="b2602c69:ProjectViewProjectNode" />
               <item name="ExcelProcess" type="462c0819:PsiDirectoryNode" />
-              <item name="dist" type="462c0819:PsiDirectoryNode" />
+              <item name="output3" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -387,6 +338,14 @@
       <option name="presentableId" value="Default" />
       <updated>1510883005498</updated>
     </task>
+    <task id="LOCAL-00001" summary="add: 全部处理\处理当天选项可以配置">
+      <created>1511010893406</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1511010893406</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -396,11 +355,11 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32921347" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32921347" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.38314608" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.40786517" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4808989" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.4808989" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -419,12 +378,16 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="add: 全部处理\处理当天选项可以配置" />
+    <option name="LAST_COMMIT_MESSAGE" value="add: 全部处理\处理当天选项可以配置" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/finance.py</url>
-          <line>101</line>
+          <line>98</line>
         </line-breakpoint>
       </breakpoints>
       <option name="time" value="2" />
@@ -782,20 +745,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/customer.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="121">
-          <caret line="124" column="13" lean-forward="false" selection-start-line="124" selection-start-column="13" selection-end-line="124" selection-end-column="13" />
-          <folding>
-            <element signature="e#23#32#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/setting.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="160">
-          <caret line="6" column="21" lean-forward="true" selection-start-line="6" selection-start-column="21" selection-end-line="6" selection-end-column="21" />
+          <caret line="6" column="21" lean-forward="false" selection-start-line="6" selection-start-column="21" selection-end-line="6" selection-end-column="21" />
           <folding>
             <element signature="e#0#11#0" expanded="true" />
           </folding>
@@ -818,29 +771,39 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/finance.py">
+    <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="219">
-          <caret line="118" column="13" lean-forward="false" selection-start-line="118" selection-start-column="13" selection-end-line="118" selection-end-column="13" />
-          <folding>
-            <element signature="e#23#32#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="216">
+          <caret line="6" column="6" lean-forward="true" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/conf/process.yaml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="144">
-          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="17" />
+          <caret line="4" column="17" lean-forward="false" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
+    <entry file="file://$PROJECT_DIR$/finance.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="6" column="6" lean-forward="true" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
-          <folding />
+        <state relative-caret-position="166">
+          <caret line="113" column="19" lean-forward="false" selection-start-line="113" selection-start-column="14" selection-end-line="113" selection-end-column="19" />
+          <folding>
+            <element signature="e#23#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/customer.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="127" column="5" lean-forward="true" selection-start-line="127" selection-start-column="5" selection-end-line="127" selection-end-column="5" />
+          <folding>
+            <element signature="e#23#32#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

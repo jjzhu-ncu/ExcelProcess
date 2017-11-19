@@ -63,7 +63,6 @@ def process(file_name):
         to_excel(PROPERTIES['processed_finance_table_output_dir'] + '\\其他财务表-' +
                  curr_date + EXCEL_SUFFIX,
                  index=False)
-    print(income_df['订单号'].dtype)
     income_df = income_df[['时间', '收入(元)', '订单号']]
     merge_df = pd.merge(income_df, origin_customer_df, how='left', on='订单号')
 
@@ -87,9 +86,7 @@ def process(file_name):
     LOGGER.info('开始核对财务表和客户订单金额')
     match_record = match_record.reset_index(drop=True)
     for index in match_record.index:
-        print(index)
         error_flag = False
-
         column = match_record.iloc[index].values
         if column[merge_columns.index('收入(元)')] != column[merge_columns.index('订单金额')]:
             LOGGER.warn('订单号【%s】有误' % column[merge_columns.index('订单号')])

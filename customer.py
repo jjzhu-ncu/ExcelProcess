@@ -129,8 +129,6 @@ else:
     today = datetime.datetime.now().strftime('%Y_%m_%d')
     process_file_name = "原始客服表-" + today + EXCEL_SUFFIX
     process_file_name_path = PROPERTIES['origin_customer_table_input_dir'] + "\\" + process_file_name
-
-    print(process_file_name_path)
     if os.path.exists(process_file_name_path):
         process(process_file_name)
         os.system("explorer " + PROPERTIES['processed_customer_table_output_dir'])
